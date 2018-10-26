@@ -1,1 +1,8 @@
-EDIT PROFILE IMAGE
+<h1>Edit Avatar</h1>
+
+<%= form_with model: @avatar, url: avatar_path, method: :patch, local: true do |form| %>
+    <div>
+        <%= form.file_field :image %>
+        <%= form.submit %>
+    </div>
+<% end %>
