@@ -1,9 +1,7 @@
-# This is not a plutal file name, as it uses the users model, so we will only see one 
-
-class ProfileController < ApplicationController
-    before_action :set_avatar, only: [:index]
-
-    def index
+class AvatarsController < ApplicationController
+    before_action :set_avatar, only: [:edit]
+    
+    def edit
     end
 
     private
